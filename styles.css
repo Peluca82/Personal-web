@@ -1,0 +1,311 @@
+@font-face {
+    font-family: 'ANK24';
+    src: url('fonts/web437-dos-v-re-ank24.woff') format('truetype');
+}
+
+body {
+  cursor: url('assets/cursor/Dark\ souls\ 3.cur'), auto;
+}
+
+a, button {
+  cursor: url('assets/cursor/Darksign\ \(Link\).cur'), pointer;
+}
+
+body:active {
+  cursor: url('assets/cursor/Dark\ souls\ 3.cur'), auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #fff4e5;
+    --background-color: #000000;
+    --accent-color: #9900ff;
+    --accent-color2: #D8FB81;
+}
+
+a {
+    color: var(--accent-color2);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+}
+
+.texto-normal {
+    font-family: 'ANK24', monospace;
+}
+
+.texto-aesthetic {
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 8px;
+}
+
+.crt {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    display: flow-root;
+}
+
+.crt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+.gif {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    object-fit: cover;
+    z-index: 1;
+    rotate: calc(10deg);
+    transform: scaleX(-1);
+}
+
+.gif2 {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    left: auto;
+    object-fit: cover;
+    z-index: 1;
+    rotate: calc(-10deg);
+}
+
+.gif img,
+.gif2 img {
+    width: min(100px, 12vw);
+    max-width: 100px;
+    height: auto;
+    display: block;
+}
+
+.bonfire img {
+    width: min(50px, 3vw);
+    max-width: 50px;
+    height: auto;
+    display: block;
+}
+
+.subtitulo {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    width: 100%;
+    margin-top: 15px;
+    background-image: url(img/nurple-static-bright.gif);
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: color;
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid;
+    min-height: 100dvh;
+    width: 50%;
+    grid-template-rows: auto 1fr auto;
+    place-items: center;
+    place-self: center;
+    background-color: black;
+    border: 1px solid var(--accent-color2);
+    margin-bottom: 10px;
+    margin-top: 10px;
+} 
+
+.ASCII {
+    font-family: monospace;
+    letter-spacing: 0px;
+    white-space: pre;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid var(--accent-color2);
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 12px;
+}
+
+strong {
+    color: var(--primary-color);
+}
+
+.silent-hill {
+    text-align: center;
+}
+
+.sh1 {
+    margin-top: 30px;
+}
+
+#sobre-mi li {
+    font-size: 18px;
+}
+
+.barra {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;
+    border-top: 1px dotted rgba(255, 255, 255, 0.565);
+}
+
+.foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto img {
+    width: 500px;
+}
+
+.musica-texto {
+    max-width: 660px;
+}
+
+.p1 {
+    margin-bottom: 15px;
+}
+
+.musica {
+    margin-bottom: 15px;
+}
+
+.card-album {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.interes {
+    padding-bottom: 10px;
+} 
+
+.card-album p {
+    max-width: 350px;
+}
+
+.portada {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 50%;
+}
+
+.card-album h3 {
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.portada img {
+    width: 200px;
+}
+
+.videojuegos {
+    margin-top: 50px;
+}
+
+.videojuegos p {
+    max-width: 660px;
+}
+
+.cards-juegos {
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 650px;
+}
+
+.card-juego {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-juego img {
+    width: 150px;
+}
+
+.redes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.card88x31 {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+    font-size: 16px;
+}
+
+.bonfire {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: auto;
+    z-index: 3;
+    transform-origin: bottom right;
+    will-change: transform;
+}
